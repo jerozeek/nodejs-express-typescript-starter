@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf build/ && tsc",
+    "build": "rm -rf dist/ && tsc",
     "dev": "nodemon src/server.ts",
-    "start": "node ./build/server.js",
-    "test": "export NODE_ENV=test PORT=9091 && jest --forceExit --runInBand --detectOpenHandles"
+    "start": "node ./dist/server.js",
+    "test": "export NODE_ENV=test PORT=9099 && jest --forceExit --runInBand --detectOpenHandles"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ezumah Jeremiah Kalu",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@grzpab/ts-spymaster": "^0.0.4",
     "@types/axios": "^0.14.0",
     "@types/bcrypt": "^5.0.0",
     "@types/cookie-parser": "^1.4.3",
